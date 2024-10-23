@@ -20,6 +20,11 @@ func main() {
 		go checkLink(link, c)
 	}
 
+	// blocking call
+	fmt.Println(<-c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
 	fmt.Println(<-c)
 }
 
